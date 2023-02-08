@@ -18,7 +18,6 @@ export class AstronomieComponent implements OnInit  {
   }
   
   getInfoAstronomie(){
-    //console.log("hhhhhhhhhhh")
     axios.get("https://go-apod.herokuapp.com/apod")
     .then(res =>{
       console.log(res.data)
