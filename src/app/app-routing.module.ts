@@ -5,7 +5,11 @@ import { AstronomieComponent } from './pages/astronomie/astronomie.component';
 const routes: Routes = [
   {
     path: "astronomie", component:AstronomieComponent
+  },
+  {
+    path:'', redirectTo : 'astronomie' , pathMatch: 'full'
   }
+
 ];
 
 @NgModule({
